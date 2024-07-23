@@ -86,10 +86,6 @@ def extract_flight_data(flight_info) -> List[Dict]:
         element_dict["arrival_time"] = timestamps[1]
 
         # Extract airlines
-        # airline_section = elementSoup.find("div", {"class": "orbit-carrier-logo flex content-between justify-between bg-transparent flex-row w-icon-large h-icon-large"})
-        # airline = airline_section.find("img")
-        # element_dict["airline"] = airline.get('title')
-
         airline_section = elementSoup.find(
             "div", {"class": "flex flex-wrap items-center justify-center gap-y-xxs"}
         )
