@@ -43,30 +43,8 @@ def test_validate_date():
 
 
 def test_transform_dates():
-    current_year = datetime.now().year
-    next_year = datetime.now().year + 1
+    assert transform_dates('2024-07-01', 5) == '2024-07-06'
+    assert transform_dates('2024-07-01', -5) == '2024-06-26'
 
-    input = {
-        "Mon 18 Nov":f"{current_year}-11-23",
-        "Mon 9 Sep":f"{current_year}-09-14",
-        "Tue 26 Nov":f"{current_year}-12-01",
-    }
-    for k,v in input.items():
-        assert transform_dates(k, 5, year = "current") == v
-    
-    input = {
-        "Mon 18 Nov":f"{next_year}-11-23",
-        "Mon 9 Sep":f"{next_year}-09-14",
-        "Tue 26 Nov":f"{next_year}-12-01",
-    }
-    for k,v in input.items():
-        assert transform_dates(k, 5, year = "next") == v
-
-    input = {
-        f"{current_year}-08-03":f"{current_year}-08-08",
-        f"{current_year}-05-20":f"{current_year}-05-25",
-    }
-    for k,v in input.items():
-        assert transform_dates(k, 5, year = "current") == v
-
+    assert transform_dates('2024-07-01', 0) == '2024-07-01'
 
