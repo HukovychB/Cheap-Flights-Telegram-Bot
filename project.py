@@ -9,7 +9,7 @@ from time import sleep
 
 from scraper import find_cheap_oneway_flights
 
-BOT_KEY: Final = ""
+BOT_KEY: Final = "YOUR_BOT_API_KEY"
 # Initiate bot
 bot = telebot.TeleBot(BOT_KEY)
 
