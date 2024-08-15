@@ -1,6 +1,7 @@
 # Cheap Flights Telegram Bot
 
 #### Video Demo:  https://youtu.be/O9-yEv3KMIs
+#### Website Page:  https://hukovychb.github.io/project_pages/telegram-flight-bot
 ## Overview
 
 This Telegram bot helps users find budget flights using web scraping. It interacts with users to collect flight search parameters, performs the search using a scraping script, and presents the results within Telegram. The bot can handle one-way and round-trip flights and allows users to specify flexible travel dates and type of flights (direct or with stops). Finally, it allows users to set an automated search that is conducted at specified time interval.
