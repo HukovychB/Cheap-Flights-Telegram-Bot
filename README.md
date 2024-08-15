@@ -31,7 +31,7 @@ Make sure you have Python installed, then install the required Python libraries 
 ```bash
 pip install -r requirements.txt
 ```
-### 1. Download ChromeDriver
+### 2. Download ChromeDriver
 Download ChromeDriver that matches your version of Google Chrome from ChromeDriver download page. Place the chromedriver executable in your system's PATH or in the project directory.
 
 ### 3. Configure the Bot
